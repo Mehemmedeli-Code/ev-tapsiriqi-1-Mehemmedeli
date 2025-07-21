@@ -1,0 +1,43 @@
+int a = 5;
+int b = 7;
+int c = 8;
+
+
+if (a > b && a > c)
+{
+    Console.WriteLine("A en boyukdur");
+}
+else if (b > c && b > a) 
+{
+    Console.WriteLine("B en boyukdur");
+}
+else if (c > b && c > a)
+{
+    Console.WriteLine("C en boyukdur");
+}
+
+
+    {
+        Console.Write("Balı daxil et (0-100): ");
+        int bal = Convert.ToInt32(Console.ReadLine());
+
+        if (bal < 65)
+            Console.WriteLine("Kəsilib");
+        else if (bal <= 84)
+            Console.WriteLine("Adi diplom alıb");
+        else if (bal <= 94)
+            Console.WriteLine("Şərəf Diplomu alıb");
+        else
+            Console.WriteLine("Yüksək Şərəf Diplomu alıb, sag eli sizin basiniza");
+    }
+
+
+
+
+int num1 = 34;
+
+int onluq = num1 / 10;
+int teklik = num1 % 10;
+int cem = onluq + teklik;
+
+Console.WriteLine(cem);
